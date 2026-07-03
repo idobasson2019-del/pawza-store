@@ -379,6 +379,8 @@ h1,h2,h3,h4{font-family:var(--font-head);font-weight:700;line-height:1.15;letter
     p11:{t:"שמיכת נסיעות עמידה למים",c:"אביזרים",p:84.90,o:109.90,e:"🧣"},
     p12:{t:"קולר בטיחות נטען LED",c:"מוצרים לכלבים",p:69.90,o:null,e:"💡"}
   };
+  var SHOP="https://me8icm-4f.myshopify.com";
+  var VARIANTS={p1:"54376687698195",p2:"54376710209811",p3:"54376710275347",p4:"54376709226771",p5:"54376710242579",p6:"54376710373651",p7:"54376699298067",p8:"54376710406419",p9:"54376704246035",p10:"54376710537491",p11:"54376710603027",p12:"54376710308115"};
   var $=function(id){return document.getElementById(id)};
   var cart={};
   try{cart=JSON.parse(localStorage.getItem("pawza_cart_he"))||{}}catch(e){cart={}}
@@ -434,7 +436,7 @@ h1,h2,h3,h4{font-family:var(--font-head);font-weight:700;line-height:1.15;letter
   $("closeCart").onclick=closeCart;
   $("overlay").onclick=function(){closeCart();closeQuick();};
   $("modalBd").onclick=closeQuick;
-  $("checkoutBtn").onclick=function(){alert("זו חנות הדגמה. כאן ייפתח התשלום המאובטח.");};
+  $("checkoutBtn").onclick=function(){var keys=Object.keys(cart);if(!keys.length){return;}var parts=[];for(var i=0;i<keys.length;i++){var id=keys[i];if(VARIANTS[id])parts.push(VARIANTS[id]+":"+cart[id]);}if(!parts.length){return;}window.location.href=SHOP+"/cart/"+parts.join(",");};
   $("openMnav").onclick=function(){$("mnav").classList.add("open");document.body.style.overflow="hidden";};
   $("closeMnav").onclick=function(){$("mnav").classList.remove("open");document.body.style.overflow="";};
   $("mnavBd").onclick=function(){$("mnav").classList.remove("open");document.body.style.overflow="";};
