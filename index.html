@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pawza — מוצרי פרימיום לחיות מחמד מאושרות</title>
+<meta name="description" content="מוצרי פרימיום לכלבים ולחתולים — מיטות, צעצועים, כלי טיפוח ואביזרים. משלוח חינם מעל ₪199 והחזרות עד 30 יום.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ctext y='20' font-size='20'%3E%F0%9F%90%BE%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+--white:#fff;--ink:#1d2429;--ink-soft:#43515a;--gray-050:#f7f9fa;--gray-100:#eef2f4;--gray-200:#e3e9ec;--gray-300:#cdd6db;--gray-400:#9fadb4;--gray-500:#6b7a82;
+--mint-050:#eefaf4;--mint-100:#d7f2e5;--mint-200:#a8e6cd;--mint-400:#46c99a;--mint-500:#2fb488;--mint-600:#219a72;
+--blue-050:#eef5fc;--blue-100:#d8e9f8;--blue-500:#4a95d6;--blue-600:#2f7bc0;
+--star:#f7b500;--sale:#e2574c;--success:#2fb488;
+--border:var(--gray-200);--accent:var(--mint-500);--accent-strong:var(--mint-600);
+--font-head:"Poppins","Segoe UI",system-ui,sans-serif;--font-body:"Inter","Segoe UI",system-ui,sans-serif;
+--r-sm:8px;--r-md:14px;--r-lg:22px;--r-pill:999px;
+--shadow-sm:0 2px 8px rgba(20,24,27,.06);--shadow-md:0 8px 26px rgba(20,24,27,.09);--shadow-lg:0 20px 50px rgba(20,24,27,.14);
+--maxw:1240px;--gutter:clamp(16px,4vw,40px);--ease:cubic-bezier(.22,.61,.36,1);
+}
+*,*::before,*::after{box-sizing:border-box}*{margin:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);color:var(--ink);background:var(--white);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
+input{font:inherit}ul{list-style:none;padding:0}
+h1,h2,h3,h4{font-family:var(--font-head);font-weight:700;line-height:1.15;letter-spacing:-.02em;color:var(--ink)}
+:focus-visible{outline:3px solid var(--blue-500);outline-offset:2px;border-radius:4px}
+.visually-hidden{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.skip-link{position:absolute;right:12px;top:-60px;z-index:2000;background:var(--ink);color:#fff;padding:12px 20px;border-radius:var(--r-sm);font-weight:600;transition:top .2s}
+.skip-link:focus{top:12px}
+.container{width:100%;max-width:var(--maxw);margin-inline:auto;padding-inline:var(--gutter)}
+.section{padding-block:clamp(48px,8vw,90px)}.section--alt{background:var(--gray-050)}
+.section-head{text-align:center;max-width:640px;margin:0 auto clamp(30px,5vw,50px)}
+.section-head .eyebrow{justify-content:center}.section-head h2{font-size:clamp(1.7rem,3.6vw,2.6rem)}
+.section-head p{color:var(--ink-soft);margin-top:12px;font-size:1.05rem}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--accent-strong);font-weight:700;font-size:.82rem;letter-spacing:.06em;margin-bottom:14px}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--accent)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 26px;border-radius:var(--r-pill);font-weight:600;font-size:.96rem;transition:transform .18s,box-shadow .2s,background .2s;white-space:nowrap;line-height:1}
+.btn--primary{background:var(--ink);color:#fff}.btn--primary:hover{background:#000;transform:translateY(-2px);box-shadow:var(--shadow-md)}
+.btn--accent{background:var(--accent);color:#fff;box-shadow:0 8px 20px rgba(47,180,136,.28)}.btn--accent:hover{background:var(--accent-strong);transform:translateY(-2px)}
+.btn--ghost{background:var(--white);color:var(--ink);border:1.5px solid var(--border)}.btn--ghost:hover{border-color:var(--ink);transform:translateY(-2px)}
+.btn--block{width:100%}.btn--sm{padding:9px 16px;font-size:.85rem}.btn--lg{padding:16px 34px;font-size:1.02rem}
+.announce{background:var(--ink);color:#fff;font-size:.82rem;font-weight:500}
+.announce .container{display:flex;align-items:center;justify-content:center;gap:26px;min-height:40px;flex-wrap:wrap}
+.announce span{display:inline-flex;align-items:center;gap:7px}.announce span::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--mint-400)}
+.header{position:sticky;top:0;z-index:900;background:rgba(255,255,255,.92);backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--border)}
+.header .container{display:flex;align-items:center;gap:20px;min-height:70px}
+.logo{display:inline-flex;align-items:center;gap:10px;font-family:var(--font-head);font-weight:800;font-size:1.4rem;letter-spacing:-.03em;direction:ltr}
+.logo svg{width:38px;height:38px}.logo b{color:var(--accent-strong)}
+.nav{display:flex;gap:4px;margin-inline:auto}
+.nav a{padding:10px 16px;border-radius:var(--r-pill);font-weight:500;font-size:.95rem;color:var(--ink-soft);transition:.18s}
+.nav a:hover,.nav a.current{color:var(--ink);background:var(--gray-050)}.nav a.current{font-weight:600}
+.tools{display:flex;align-items:center;gap:4px}
+.icon-btn{position:relative;display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;transition:background .18s}
+.icon-btn:hover{background:var(--gray-100)}.icon-btn svg{width:21px;height:21px}
+.badge{position:absolute;top:4px;left:4px;min-width:18px;height:18px;padding:0 5px;background:var(--sale);color:#fff;font-size:.68rem;font-weight:700;border-radius:var(--r-pill);display:grid;place-items:center;border:2px solid #fff}
+.badge[data-count="0"]{display:none}
+.hamburger{display:none}
+.hero{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--mint-050),var(--blue-050) 60%,#fff)}
+.hero__grid{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding-block:clamp(40px,6vw,78px)}
+.hero__content{max-width:560px}.hero h1{font-size:clamp(2.2rem,5.4vw,3.8rem)}.hero h1 .hl{color:var(--accent-strong)}
+.hero__lead{font-size:clamp(1.02rem,1.6vw,1.2rem);color:var(--ink-soft);margin:20px 0 30px}
+.hero__cta{display:flex;flex-wrap:wrap;gap:14px}
+.hero__trust{display:flex;gap:24px;margin-top:32px;flex-wrap:wrap}
+.hero__trust div{display:flex;align-items:center;gap:8px;font-size:.9rem;font-weight:500;color:var(--ink-soft)}
+.hero__media{position:relative}
+.hero__ph{width:100%;aspect-ratio:4/4.3;border-radius:var(--r-lg);box-shadow:var(--shadow-lg);display:grid;place-items:center;background:linear-gradient(135deg,var(--mint-100),var(--blue-100))}
+.hero__badge{position:absolute;background:#fff;border-radius:var(--r-md);padding:14px 18px;box-shadow:var(--shadow-md);display:flex;align-items:center;gap:12px}
+.hero__badge.tl{top:20px;right:6px}.hero__badge.br{bottom:24px;left:6px}
+.hero__badge .em{width:42px;height:42px;border-radius:50%;background:var(--mint-100);display:grid;place-items:center;font-size:1.3rem}
+.hero__badge strong{display:block;font-size:1.05rem;font-family:var(--font-head)}.hero__badge small{color:var(--gray-500);font-size:.78rem}
+.cat-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+.cat-card{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;padding:26px 14px;background:#fff;border:1px solid var(--border);border-radius:var(--r-md);transition:transform .2s,box-shadow .2s}
+.cat-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-md)}
+.cat-card .ic{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;background:var(--mint-050);font-size:1.9rem}
+.cat-card:nth-child(even) .ic{background:var(--blue-050)}
+.cat-card h3{font-size:1rem}.cat-card span{font-size:.8rem;color:var(--gray-500)}
+.product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.card{position:relative;background:#fff;border:1px solid var(--border);border-radius:var(--r-md);overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-6px);box-shadow:var(--shadow-md)}
+.card__media{position:relative;aspect-ratio:1/1;overflow:hidden}
+.card__ph{width:100%;height:100%;display:grid;place-items:center;font-size:3.4rem;background:linear-gradient(135deg,var(--mint-050),var(--blue-050));transition:transform .5s}
+.card:hover .card__ph{transform:scale(1.06)}
+.card__tags{position:absolute;top:12px;right:12px;display:flex;flex-direction:column;gap:6px;z-index:2}
+.tag{padding:4px 10px;border-radius:var(--r-pill);font-size:.7rem;font-weight:700;letter-spacing:.02em;color:#fff}
+.tag.best{background:var(--ink)}.tag.new{background:var(--accent)}.tag.sale{background:var(--sale)}
+.card__wish{position:absolute;top:10px;left:10px;z-index:2;width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.92);display:grid;place-items:center;box-shadow:var(--shadow-sm);font-size:1.1rem;color:var(--gray-400);transition:transform .18s,color .18s}
+.card__wish:hover{transform:scale(1.12);color:var(--sale)}.card__wish.active{color:var(--sale)}
+.card__body{padding:16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card__cat{font-size:.74rem;letter-spacing:.04em;color:var(--gray-500);font-weight:600}
+.card__title{font-family:var(--font-head);font-size:1rem;font-weight:600;line-height:1.3}
+.card__title button{text-align:right;width:100%}.card__title button:hover{color:var(--accent-strong)}
+.stars{display:flex;align-items:center;gap:6px;font-size:.95rem}.stars .s{color:var(--star);letter-spacing:1px;direction:ltr}.stars .count{font-size:.8rem;color:var(--gray-500)}
+.card__price{display:flex;align-items:baseline;gap:8px;margin-top:auto}
+.price{font-family:var(--font-head);font-weight:700;font-size:1.18rem}
+.price--old{font-size:.95rem;color:var(--gray-400);text-decoration:line-through;font-weight:500}
+.card__foot{padding:0 16px 16px}
+.feature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.feature{text-align:center;padding:32px 22px;background:#fff;border-radius:var(--r-md);border:1px solid var(--border);transition:transform .2s,box-shadow .2s}
+.feature:hover{transform:translateY(-6px);box-shadow:var(--shadow-md)}
+.feature .ic{width:62px;height:62px;border-radius:18px;background:var(--mint-050);display:grid;place-items:center;margin:0 auto 18px;font-size:1.7rem}
+.feature h3{font-size:1.12rem;margin-bottom:8px}.feature p{color:var(--ink-soft);font-size:.93rem}
+.promo{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,58px);align-items:center}
+.promo__ph{width:100%;aspect-ratio:5/4.5;border-radius:var(--r-lg);box-shadow:var(--shadow-md);display:grid;place-items:center;font-size:7rem;background:linear-gradient(135deg,var(--blue-050),var(--mint-050))}
+.promo h2{font-size:clamp(1.6rem,3.4vw,2.4rem)}.promo p{color:var(--ink-soft);margin:16px 0 20px;font-size:1.03rem}
+.promo__price{display:flex;align-items:baseline;gap:12px;margin-bottom:18px}.promo__price .price{font-size:2rem}
+.promo__list{display:grid;gap:10px;margin:20px 0}.promo__list li{display:flex;align-items:center;gap:10px;font-weight:500}.promo__list li::before{content:"✓";color:var(--accent-strong);font-weight:800}
+.countdown{display:flex;gap:10px;margin:18px 0}
+.cd{background:var(--ink);color:#fff;border-radius:var(--r-sm);padding:10px 4px;min-width:62px;text-align:center}
+.cd b{font-family:var(--font-head);font-size:1.6rem;display:block;line-height:1}.cd span{font-size:.68rem;letter-spacing:.04em;opacity:.7}
+.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.review{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:28px;display:flex;flex-direction:column;gap:14px}
+.review .s{color:var(--star);letter-spacing:2px;font-size:1.1rem;direction:ltr}.review__text{color:var(--ink-soft)}
+.review__author{display:flex;align-items:center;gap:12px;margin-top:auto}
+.review__av{width:46px;height:46px;border-radius:50%;background:var(--mint-100);display:grid;place-items:center;font-weight:700;font-family:var(--font-head);color:var(--accent-strong)}
+.review__author strong{display:block;font-size:.95rem}.review__author small{color:var(--gray-500)}
+.review__author .v{margin-inline-start:auto;color:var(--success);font-size:.78rem;font-weight:600}
+.faq-list{max-width:780px;margin:0 auto;display:grid;gap:12px}
+.faq{border:1px solid var(--border);border-radius:var(--r-md);background:#fff;overflow:hidden}
+.faq__q{width:100%;text-align:right;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 22px;font-family:var(--font-head);font-weight:600;font-size:1.03rem}
+.faq__q .ic{flex:none;width:26px;height:26px;border-radius:50%;background:var(--mint-050);color:var(--accent-strong);display:grid;place-items:center;font-weight:800;transition:transform .25s,background .25s}
+.faq.open .ic{transform:rotate(45deg);background:var(--accent);color:#fff}
+.faq__a{max-height:0;overflow:hidden;transition:max-height .3s var(--ease)}.faq__a p{padding:0 22px 22px;color:var(--ink-soft)}
+.newsletter{background:linear-gradient(135deg,var(--ink),#212b31);color:#fff;border-radius:var(--r-lg);padding:clamp(36px,6vw,60px);text-align:center;position:relative;overflow:hidden}
+.newsletter::before{content:"";position:absolute;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(70,201,154,.3),transparent 70%);top:-120px;right:-60px}
+.newsletter>*{position:relative;z-index:1}.newsletter h2{color:#fff;font-size:clamp(1.7rem,3.4vw,2.4rem)}
+.newsletter p{color:rgba(255,255,255,.8);margin:14px auto 24px;max-width:500px}
+.newsletter form{display:flex;gap:10px;max-width:460px;margin:0 auto}
+.newsletter input{flex:1;padding:14px 20px;border-radius:var(--r-pill);border:none;font-size:.98rem}
+.newsletter small{display:block;margin-top:14px;color:rgba(255,255,255,.55);font-size:.8rem}
+.footer{background:var(--ink);color:rgba(255,255,255,.72);padding-top:clamp(48px,7vw,72px)}
+.footer a{color:rgba(255,255,255,.72);transition:.18s}.footer a:hover{color:#fff}
+.footer__top{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px;padding-bottom:44px;border-bottom:1px solid rgba(255,255,255,.1)}
+.footer .logo{color:#fff;margin-bottom:16px}.footer .logo b{color:var(--mint-400)}
+.footer__about p{font-size:.93rem;max-width:320px;margin-bottom:18px}
+.footer__social{display:flex;gap:10px}.footer__social a{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.08);display:grid;place-items:center;font-size:1.1rem}.footer__social a:hover{background:var(--accent)}
+.footer__col h4{color:#fff;font-size:1rem;margin-bottom:16px}.footer__col ul{display:grid;gap:11px}.footer__col a{font-size:.92rem}
+.footer__pay{display:flex;gap:8px;margin-top:16px;flex-wrap:wrap}.footer__pay span{background:#fff;border-radius:5px;padding:5px 8px;font-size:.68rem;font-weight:700;color:var(--ink);direction:ltr}
+.footer__bottom{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:22px;flex-wrap:wrap;font-size:.84rem}
+.footer__bottom nav{display:flex;gap:18px;flex-wrap:wrap}
+.overlay{position:fixed;inset:0;background:rgba(20,24,27,.5);z-index:1300;opacity:0;visibility:hidden;transition:opacity .3s}
+.overlay.open{opacity:1;visibility:visible}
+.drawer{position:fixed;top:0;left:0;height:100%;width:min(420px,100vw);background:#fff;z-index:1400;transform:translateX(-100%);transition:transform .35s var(--ease);display:flex;flex-direction:column;box-shadow:var(--shadow-lg)}
+.drawer.open{transform:none}
+.drawer__head{display:flex;align-items:center;justify-content:space-between;padding:20px 22px;border-bottom:1px solid var(--border)}.drawer__head h2{font-size:1.25rem}
+.drawer__ship{padding:16px 22px;background:var(--mint-050)}.drawer__ship p{font-size:.86rem;margin-bottom:8px}.drawer__ship b{color:var(--accent-strong)}
+.ship-bar{height:8px;background:#fff;border-radius:var(--r-pill);overflow:hidden}.ship-bar span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--mint-400),var(--accent-strong));transition:width .4s}
+.drawer__body{flex:1;overflow-y:auto;padding:8px 22px}
+.cart-line{display:grid;grid-template-columns:64px 1fr auto;gap:14px;padding:16px 0;border-bottom:1px solid var(--border)}
+.cart-line .ph{width:64px;height:64px;border-radius:var(--r-sm);display:grid;place-items:center;font-size:1.6rem;background:var(--gray-050)}
+.cart-line h4{font-size:.92rem;font-family:var(--font-body);font-weight:600}.cart-line .muted{font-size:.8rem;color:var(--gray-500)}
+.qty{display:inline-flex;align-items:center;border:1px solid var(--border);border-radius:var(--r-pill);margin-top:8px}
+.qty button{width:28px;height:28px;display:grid;place-items:center;color:var(--ink-soft);font-size:1.1rem}
+.qty span{min-width:26px;text-align:center;font-size:.9rem;font-weight:600}
+.cart-line__price{text-align:left;font-weight:700;font-family:var(--font-head)}
+.cart-line__rm{display:block;margin-top:8px;font-size:.76rem;color:var(--gray-400);text-align:left}.cart-line__rm:hover{color:var(--sale)}
+.cart-empty{text-align:center;padding:50px 20px;color:var(--gray-500)}.cart-empty .big{font-size:3rem}
+.drawer__foot{padding:18px 22px;border-top:1px solid var(--border)}
+.cart-total{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:14px}.cart-total b{font-family:var(--font-head);font-size:1.4rem}
+.drawer__foot .muted{text-align:center;font-size:.78rem;color:var(--gray-500);margin-top:12px}
+.modal{position:fixed;inset:0;z-index:1500;display:grid;place-items:center;padding:20px;opacity:0;visibility:hidden;transition:opacity .25s}
+.modal.open{opacity:1;visibility:visible}.modal__bd{position:absolute;inset:0;background:rgba(20,24,27,.55)}
+.modal__dialog{position:relative;background:#fff;border-radius:var(--r-lg);max-width:820px;width:100%;max-height:90vh;overflow:auto;box-shadow:var(--shadow-lg)}
+.modal__close{position:absolute;top:14px;left:14px;z-index:3;width:40px;height:40px;border-radius:50%;background:#fff;box-shadow:var(--shadow-sm);display:grid;place-items:center;font-size:1.1rem}
+.qv{display:grid;grid-template-columns:1fr 1fr}
+.qv__ph{min-height:320px;display:grid;place-items:center;font-size:6rem;background:linear-gradient(135deg,var(--mint-050),var(--blue-050))}
+.qv__body{padding:34px}.qv__body h2{font-size:1.6rem;margin:6px 0}.qv__body .price{font-size:1.8rem}.qv__desc{color:var(--ink-soft);margin:14px 0 20px}
+.toast{position:fixed;right:20px;bottom:20px;z-index:1600;background:#fff;border:1px solid var(--mint-200);border-radius:var(--r-md);box-shadow:var(--shadow-lg);padding:14px 16px;display:flex;gap:12px;align-items:center;transform:translateY(140%);transition:transform .35s var(--ease);max-width:320px}
+.toast.show{transform:none}.toast .ic{width:40px;height:40px;border-radius:50%;background:var(--mint-100);color:var(--accent-strong);display:grid;place-items:center;font-weight:800;flex:none}
+.toast strong{display:block;font-size:.92rem}.toast small{color:var(--gray-500);font-size:.82rem}
+.mnav{position:fixed;inset:0;z-index:1250;visibility:hidden}.mnav.open{visibility:visible}
+.mnav__bd{position:absolute;inset:0;background:rgba(20,24,27,.5);opacity:0;transition:opacity .3s}.mnav.open .mnav__bd{opacity:1}
+.mnav__panel{position:absolute;top:0;right:0;height:100%;width:min(320px,84vw);background:#fff;padding:24px;transform:translateX(100%);transition:transform .3s var(--ease);box-shadow:var(--shadow-lg)}
+.mnav.open .mnav__panel{transform:none}
+.mnav__head{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
+.mnav a{display:block;padding:13px 12px;border-radius:var(--r-sm);font-weight:500;font-size:1.05rem}.mnav a:hover{background:var(--gray-050)}
+@media(max-width:1024px){.cat-grid{grid-template-columns:repeat(3,1fr)}.product-grid{grid-template-columns:repeat(3,1fr)}.feature-grid{grid-template-columns:repeat(2,1fr)}.review-grid{grid-template-columns:1fr;max-width:620px;margin-inline:auto}.footer__top{grid-template-columns:1fr 1fr}}
+@media(max-width:900px){.nav{display:none}.hamburger{display:inline-flex}.hero__grid{grid-template-columns:1fr}.hero__media{order:-1;max-width:440px;margin-inline:auto}.promo{grid-template-columns:1fr}.qv{grid-template-columns:1fr}}
+@media(max-width:640px){.cat-grid{grid-template-columns:repeat(2,1fr)}.product-grid{grid-template-columns:repeat(2,1fr);gap:14px}.feature-grid{grid-template-columns:1fr 1fr}.footer__top{grid-template-columns:1fr}.footer__bottom{flex-direction:column;text-align:center}.newsletter form{flex-direction:column}.card__body{padding:12px}}
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link">דלג לתוכן</a>
+
+<div class="announce"><div class="container"><span>משלוח חינם מעל ₪199</span><span>החזרות עד 30 יום</span><span>תשלום מאובטח</span></div></div>
+
+<header class="header"><div class="container">
+  <button class="icon-btn hamburger" id="openMnav" aria-label="פתח תפריט"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+  <a href="#top" class="logo" aria-label="Pawza דף הבית"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="24" fill="#d7f2e5"/><g fill="#219a72"><circle cx="16" cy="20" r="3"/><circle cx="23" cy="16" r="3"/><circle cx="31" cy="18" r="3"/><path d="M24 24c-4.5 0-8 3.2-8 6.9 0 2.8 2.4 4 4.7 3.3 1.2-.4 2.2-.8 3.3-.8s2.1.4 3.3.8c2.3.7 4.7-.5 4.7-3.3 0-3.7-3.5-6.9-8-6.9z"/></g></svg>Paw<b>za</b></a>
+  <nav class="nav" aria-label="ראשי"><a href="#top" class="current">בית</a><a href="#shop">חנות</a><a href="#shop">הנמכרים ביותר</a><a href="#about">אודות</a><a href="#contact">צור קשר</a></nav>
+  <div class="tools">
+    <a href="#shop" class="icon-btn" aria-label="חיפוש"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></a>
+    <button class="icon-btn" aria-label="מועדפים"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 5.6a5.5 5.5 0 0 0-7.8 0L12 6.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1 7.8 7.8 7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg><span class="badge" id="wishBadge" data-count="0">0</span></button>
+    <button class="icon-btn" aria-label="החשבון שלי"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg></button>
+    <button class="icon-btn" id="openCart" aria-label="פתח עגלה"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg><span class="badge" id="cartBadge" data-count="0">0</span></button>
+  </div>
+</div></header>
+
+<main id="main">
+<span id="top"></span>
+<!-- HERO -->
+<section class="hero"><div class="container hero__grid">
+  <div class="hero__content">
+    <span class="eyebrow">מוצרי פרימיום לחיות מחמד</span>
+    <h1>מוצרים איכותיים ל<span class="hl">חיות מאושרות</span></h1>
+    <p class="hero__lead">גלו מוצרים מעוצבים, שימושיים ואיכותיים לכלבים ולחתולים — נשלחים ישירות עד הבית.</p>
+    <div class="hero__cta"><a href="#shop" class="btn btn--accent btn--lg">קנו עכשיו</a><a href="#shop" class="btn btn--ghost btn--lg">לנמכרים ביותר</a></div>
+    <div class="hero__trust"><div>✓ משלוח חינם מעל ₪199</div><div>✓ החזרה תוך 30 יום</div><div>✓ 30,000+ חיות מרוצות</div></div>
+  </div>
+  <div class="hero__media">
+    <div class="hero__ph"><span style="font-size:8rem">🐶</span></div>
+    <div class="hero__badge tl"><span class="em">⭐</span><span><strong>4.9/5</strong><small>12,400+ ביקורות</small></span></div>
+    <div class="hero__badge br"><span class="em">🚚</span><span><strong>מהיר וחינם</strong><small>משלוח מעל ₪199</small></span></div>
+  </div>
+</div></section>
+
+<!-- CATEGORIES -->
+<section class="section"><div class="container">
+  <div class="section-head"><span class="eyebrow">קנו לפי קטגוריה</span><h2>קטגוריות מובחרות</h2><p>כל מה שחיית המחמד צריכה — ממיטות נוחות ועד צעצועים וכלי טיפוח.</p></div>
+  <div class="cat-grid">
+    <a class="cat-card" href="#shop"><span class="ic">🐕</span><h3>מוצרים לכלבים</h3><span>רתמות וקולרים</span></a>
+    <a class="cat-card" href="#shop"><span class="ic">🐈</span><h3>מוצרים לחתולים</h3><span>מיטות וצעצועים</span></a>
+    <a class="cat-card" href="#shop"><span class="ic">🦴</span><h3>אביזרים</h3><span>קערות ושמיכות</span></a>
+    <a class="cat-card" href="#shop"><span class="ic">🪮</span><h3>טיפוח</h3><span>מברשות וטיפוח ציפורניים</span></a>
+    <a class="cat-card" href="#shop"><span class="ic">🧩</span><h3>צעצועים</h3><span>עצמות ופאזלים</span></a>
+    <a class="cat-card" href="#shop"><span class="ic">🛏️</span><h3>מיטות ונוחות</h3><span>אורתופדיות ומרגיעות</span></a>
+  </div>
+</div></section>
+
+<!-- BEST SELLERS / SHOP -->
+<section class="section section--alt" id="shop"><div class="container">
+  <div class="section-head"><span class="eyebrow">אהובים על בעלי חיות</span><h2>הנמכרים ביותר</h2><p>מוצרי החיות הפופולריים ביותר שלנו, שנבחרו על ידי אלפי לקוחות מרוצים.</p></div>
+  <div class="product-grid">
+
+    <article class="card"><div class="card__media"><div class="card__tags"><span class="tag best">הנמכר ביותר</span></div><button class="card__wish" data-id="p1" aria-label="הוסף למועדפים">♥</button><button class="card__ph" data-quick="p1" aria-label="צפייה מהירה במיטת זיכרון אורתופדית לכלב">🛏️</button></div><div class="card__body"><span class="card__cat">מיטות ונוחות</span><h3 class="card__title"><button data-quick="p1">מיטת זיכרון אורתופדית לכלב</button></h3><div class="stars"><span class="s">★★★★★</span><span class="count">(214)</span></div><div class="card__price"><span class="price">₪239.90</span><span class="price--old">₪329.90</span></div></div><div class="card__foot"><button class="btn btn--accent btn--block" data-add="p1">הוסף לעגלה</button></div></article>
+
+    <article class="card"><div class="card__media"><div class="card__tags"><span class="tag best">הנמכר ביותר</span></div><button class="card__wish" data-id="p7" aria-label="הוסף למועדפים">♥</button><button class="card__ph" data-quick="p7" aria-label="צפייה מהירה ברתמת נוחות מתכווננת לכלב">🐕</button></div><div class="card__body"><span class="card__cat">מוצרים לכלבים</span><h3 class="card__title"><button data-quick="p7">רתמת נוחות מתכווננת לכלב</button></h3><div class="stars"><span class="s">★★★★★</span><span class="count">(287)</span></div><div class="card__price"><span class="price">₪129.90</span><span class="price--old">₪169.90</span></div></div><div class="card__foot"><button class="btn btn--accent btn--block" data-add="p7">הוסף לעגלה</button></div></article>
+
+    <article class="card"><div class="card__media"><div class="card__tags"><span class="tag sale">מבצע</span></div><button class="card__wish" data-id="p9" aria-label="הוסף למועדפים">♥</button><button class="card__ph" data-quick="p9" aria-label="צפייה מהירה במיטת דונאט מרגיעה">🩷</button></div><div class="card__body"><span class="card__cat">מיטות ונוחות</span><h3 class="card__title"><button data-quick="p9">מיטת דונאט מרגיעה</button></h3><div class="stars"><span class="s">★★★★★</span><span class="count">(331)</span></div><div class="card__price"><span class="price">₪179.90</span><span class="price--old">₪249.90</span></div></div><div class="card__foot"><button class="btn btn--accent btn--block" data-add="p9">הוסף לעגלה</button></div></article>
+
+    <article class="card"><div class="card__media"><div class="card__tags"><span class="tag best">הנמכר ביותר</span></div><button class="card__wish" data-id="p4" aria-label="הוסף למועדפים">♥</button><button class="card__ph" data-quick="p4" aria-label="צפייה מהירה בסט קערות נירוסטה">🥣</button></div><div class="card__body"><span class="card__cat">אביזרים</span><h3 class="card__title"><button data-quick="p4">סט קערות נירוסטה נגד שפיכה</button></h3><div class="stars"><span class="s">★★★★★</span><span class="count">(121)</span></div><div class="card__price"><span class="price">₪109.90</span></div></div><div class="card__foot"><button class="btn btn--accent btn--block" data-add="p4">הוסף לעגלה</button></div></article>
+
+    <article class="card"><div class="card__media"><div class="card__tags"><span class="tag new">חדש</span></div><button class="card__wish" data-id="p2" aria-label="הוסף למועדפים">♥</button><button class="card__ph" data-quick="p2" aria-label="צפייה מהירה בצעצוע פאזל לחטיפים">🧩</button></div><div class="card__body"><span class="card__cat">צעצועים</span><h3 class="card__title"><button data-quick="p2">צעצוע פאזל אינטראקטיבי לחטיפים</button></h3><div class="stars"><span class="s">★★★★★</span><span class="count">(168)</span></div><div class="card__price"><span class="price">₪89.90</span></div></div><div class="card__foot"><button class="btn btn--accent btn--block" data-add="p2">הוסף לעגלה</button></div></article>
+
+    <article class="card"><div class="card__media"><div class="card__tags"><span class="tag sale">מבצע</span></div><button class="card__wish" data-id="p5" aria-label="הוסף למועדפים">♥</button><button class="card__ph" data-quick="p5" aria-label="צפייה מהירה במיטת מערה לחתול">🐈</button></div><div class="card__body"><span class="card__cat">מוצרים לחתולים</span><h3 class="card__title"><button data-quick="p5">מיטת מערה נעימה לחתול</button></h3><div class="stars"><span class="s">★★★★★</span><span class="count">(96)</span></div><div class="card__price"><span class="price">₪149.90</span><span class="price--old">₪199.90</span></div></div><div class="card__foot"><button class="btn btn--accent btn--block" data-add="p5">הוסף לעגלה</button></div></article>
+
+    <article class="card"><div class="card__media"><div class="card__tags"><span class="tag sale">מבצע</span></div><button class="card__wish" data-id="p3" aria-label="הוסף למועדפים">♥</button><button class="card__ph" data-quick="p3" aria-label="צפייה מהירה במברשת טיפוח">🪮</button></div><div class="card__body"><span class="card__cat">טיפוח</span><h3 class="card__title"><button data-quick="p3">מברשת טיפוח מתנקה בעצמה</button></h3><div class="stars"><span class="s">★★★★★</span><span class="count">(342)</span></div><div class="card__price"><span class="price">₪74.90</span><span class="price--old">₪99.90</span></div></div><div class="card__foot"><button class="btn btn--accent btn--block" data-add="p3">הוסף לעגלה</button></div></article>
+
+    <article class="card"><div class="card__media"><div class="card__tags"><span class="tag best">הנמכר ביותר</span></div><button class="card__wish" data-id="p12" aria-label="הוסף למועדפים">♥</button><button class="card__ph" data-quick="p12" aria-label="צפייה מהירה בקולר בטיחות LED">💡</button></div><div class="card__body"><span class="card__cat">מוצרים לכלבים</span><h3 class="card__title"><button data-quick="p12">קולר בטיחות נטען LED</button></h3><div class="stars"><span class="s">★★★★★</span><span class="count">(176)</span></div><div class="card__price"><span class="price">₪69.90</span></div></div><div class="card__foot"><button class="btn btn--accent btn--block" data-add="p12">הוסף לעגלה</button></div></article>
+
+    <article class="card"><div class="card__media"><div class="card__tags"><span class="tag new">חדש</span></div><button class="card__wish" data-id="p6" aria-label="הוסף למועדפים">♥</button><button class="card__ph" data-quick="p6" aria-label="צפייה מהירה במארז עצמות חבל">🦴</button></div><div class="card__body"><span class="card__cat">צעצועים</span><h3 class="card__title"><button data-quick="p6">מארז עצמות חבל עמידות</button></h3><div class="stars"><span class="s">★★★★★</span><span class="count">(203)</span></div><div class="card__price"><span class="price">₪59.90</span></div></div><div class="card__foot"><button class="btn btn--accent btn--block" data-add="p6">הוסף לעגלה</button></div></article>
+
+    <article class="card"><div class="card__media"><div class="card__tags"><span class="tag new">חדש</span></div><button class="card__wish" data-id="p8" aria-label="הוסף למועדפים">♥</button><button class="card__ph" data-quick="p8" aria-label="צפייה מהירה במקל נוצות לחתול">🪶</button></div><div class="card__body"><span class="card__cat">מוצרים לחתולים</span><h3 class="card__title"><button data-quick="p8">מקל נוצות משחק לחתול</button></h3><div class="stars"><span class="s">★★★★★</span><span class="count">(154)</span></div><div class="card__price"><span class="price">₪49.90</span></div></div><div class="card__foot"><button class="btn btn--accent btn--block" data-add="p8">הוסף לעגלה</button></div></article>
+
+    <article class="card"><div class="card__media"><div class="card__tags"><span class="tag new">חדש</span></div><button class="card__wish" data-id="p10" aria-label="הוסף למועדפים">♥</button><button class="card__ph" data-quick="p10" aria-label="צפייה מהירה בערכת משחיזת ציפורניים">✂️</button></div><div class="card__body"><span class="card__cat">טיפוח</span><h3 class="card__title"><button data-quick="p10">ערכת משחיזת ציפורניים מקצועית</button></h3><div class="stars"><span class="s">★★★★★</span><span class="count">(88)</span></div><div class="card__price"><span class="price">₪99.90</span></div></div><div class="card__foot"><button class="btn btn--accent btn--block" data-add="p10">הוסף לעגלה</button></div></article>
+
+    <article class="card"><div class="card__media"><div class="card__tags"><span class="tag sale">מבצע</span></div><button class="card__wish" data-id="p11" aria-label="הוסף למועדפים">♥</button><button class="card__ph" data-quick="p11" aria-label="צפייה מהירה בשמיכת נסיעות">🧣</button></div><div class="card__body"><span class="card__cat">אביזרים</span><h3 class="card__title"><button data-quick="p11">שמיכת נסיעות עמידה למים</button></h3><div class="stars"><span class="s">★★★★★</span><span class="count">(142)</span></div><div class="card__price"><span class="price">₪84.90</span><span class="price--old">₪109.90</span></div></div><div class="card__foot"><button class="btn btn--accent btn--block" data-add="p11">הוסף לעגלה</button></div></article>
+
+  </div>
+</div></section>
+
+<!-- FEATURED PRODUCT + COUNTDOWN -->
+<section class="section"><div class="container promo">
+  <div class="promo__ph">🛏️</div>
+  <div>
+    <span class="eyebrow">⚡ מבצע לזמן מוגבל</span>
+    <h2>מיטת זיכרון אורתופדית לכלב</h2>
+    <div class="stars" style="margin:12px 0"><span class="s" style="font-size:1.1rem">★★★★★</span><span class="count">(214 ביקורות)</span></div>
+    <p>העניקו לכלב שלכם שינה עמוקה ורגועה. המיטה האורתופדית המומלצת על ידי וטרינרים עשויה מקצף זיכרון איכותי התומך במפרקים — עם כיסוי נשלף הניתן לכביסה במכונה.</p>
+    <div class="promo__price"><span class="price">₪239.90</span><span class="price--old">₪329.90</span><span class="tag sale">חסכו 27%</span></div>
+    <p style="font-weight:600;margin:0 0 4px">⏰ המבצע מסתיים בעוד:</p>
+    <div class="countdown"><div class="cd"><b id="cdH">08</b><span>שעות</span></div><div class="cd"><b id="cdM">00</b><span>דקות</span></div><div class="cd"><b id="cdS">00</b><span>שניות</span></div></div>
+    <ul class="promo__list"><li>תמיכת קצף זיכרון אורתופדי</li><li>כיסוי נשלף לכביסה במכונה</li><li>בסיס נגד החלקה עמיד למים</li></ul>
+    <div class="hero__cta"><button class="btn btn--accent btn--lg" data-add="p1">הוסף לעגלה — ₪239.90</button><button class="btn btn--ghost btn--lg" data-quick="p1">צפייה מהירה</button></div>
+  </div>
+</div></section>
+
+<!-- WHY CHOOSE -->
+<section class="section section--alt" id="about"><div class="container">
+  <div class="section-head"><span class="eyebrow">ההבטחה של Pawza</span><h2>למה לבחור ב-Pawza</h2><p>גם אנחנו בעלי חיות — ולכן אנחנו אובססיביים לאיכות, לבטיחות ולשירות.</p></div>
+  <div class="feature-grid">
+    <div class="feature"><div class="ic">🚚</div><h3>משלוח מהיר</h3><p>קבלו את המוצרים האהובים על חיית המחמד במהירות ובבטחה.</p></div>
+    <div class="feature"><div class="ic">🔒</div><h3>תשלום מאובטח</h3><p>התשלום שלכם מוגן בהצפנה מאובטחת ואמינה.</p></div>
+    <div class="feature"><div class="ic">↩️</div><h3>החזרות תוך 30 יום</h3><p>קנו בביטחון בזכות מדיניות ההחזרות הנוחה שלנו ל-30 יום.</p></div>
+    <div class="feature"><div class="ic">⭐</div><h3>איכות פרימיום</h3><p>מוצרים שנבחרו בקפידה לנוחות ולאושר של חיית המחמד.</p></div>
+  </div>
+</div></section>
+
+<!-- REVIEWS -->
+<section class="section"><div class="container">
+  <div class="section-head"><span class="eyebrow">★ דירוג ממוצע 4.9</span><h2>ביקורות לקוחות</h2><p>הצטרפו ל-30,000+ בעלי חיות שסומכים על Pawza למוצרי טיפוח איכותיים.</p></div>
+  <div class="review-grid">
+    <div class="review"><div class="s">★★★★★</div><p class="review__text">"המיטה האורתופדית שינתה לגמרי את השינה של הכלב המבוגר שלי. הוא כבר לא מתקשה לקום בבוקר. שווה כל שקל!"</p><div class="review__author"><span class="review__av">שמ</span><div><strong>שרה מ.</strong><small>קונה מאומתת</small></div><span class="v">✓ מאומת</span></div></div>
+    <div class="review"><div class="s">★★★★★</div><p class="review__text">"משלוח מהיר ואיכות יפהפייה. החתולה שלי מתה על מיטת המערה החדשה ומקל הנוצות הוא הצעצוע האהוב עליה. ממליץ בחום!"</p><div class="review__author"><span class="review__av">יד</span><div><strong>יעקב ד.</strong><small>קונה מאומת</small></div><span class="v">✓ מאומת</span></div></div>
+    <div class="review"><div class="s">★★★★★</div><p class="review__text">"שירות הלקוחות מעולה ומדיניות ההחזרה ל-30 יום נתנה לי ביטחון לקנות. הכל הגיע ארוז להפליא. מותג פרימיום אמיתי."</p><div class="review__author"><span class="review__av">מל</span><div><strong>מיכל ל.</strong><small>קונה מאומתת</small></div><span class="v">✓ מאומת</span></div></div>
+  </div>
+</div></section>
+
+<!-- FAQ -->
+<section class="section section--alt"><div class="container">
+  <div class="section-head"><span class="eyebrow">יש שאלות?</span><h2>שאלות נפוצות</h2></div>
+  <div class="faq-list">
+    <div class="faq"><button class="faq__q">כמה זמן לוקח המשלוח?<span class="ic">+</span></button><div class="faq__a"><p>ההזמנות מעובדות תוך 24 שעות ומגיעות בדרך כלל תוך 3–7 ימי עסקים. משלוח חינם על כל ההזמנות מעל ₪199.</p></div></div>
+    <div class="faq"><button class="faq__q">מהי מדיניות ההחזרות?<span class="ic">+</span></button><div class="faq__a"><p>אנו מציעים מדיניות החזרה נוחה ל-30 יום. אם אינכם מרוצים לחלוטין, החזירו את הפריט תוך 30 יום להחזר כספי מלא — ללא שאלות.</p></div></div>
+    <div class="faq"><button class="faq__q">האם המוצרים בטוחים לחיות?<span class="ic">+</span></button><div class="faq__a"><p>בהחלט. כל מוצר של Pawza נבדק בקפידה לאיכות ולבטיחות, ועשוי מחומרים בטוחים ולא רעילים.</p></div></div>
+    <div class="faq"><button class="faq__q">האם אתם שולחים לחו״ל?<span class="ic">+</span></button><div class="faq__a"><p>כן! אנו שולחים ליותר מ-40 מדינות. התעריפים וזמני המשלוח מחושבים בקופה לפי מיקומכם.</p></div></div>
+  </div>
+</div></section>
+
+<!-- NEWSLETTER -->
+<section class="section" id="contact"><div class="container">
+  <div class="newsletter">
+    <span class="eyebrow" style="color:var(--mint-400);justify-content:center">הצטרפו לחבורה</span>
+    <h2>קבלו 10% הנחה על ההזמנה הראשונה</h2>
+    <p>הירשמו לקבלת מבצעים בלעדיים, טיפים לטיפוח וגישה מוקדמת למוצרים חדשים.</p>
+    <form id="nlForm"><label for="nl" class="visually-hidden">אימייל</label><input id="nl" type="email" placeholder="הזינו את כתובת המייל" required><button type="submit" class="btn btn--accent">הרשמה</button></form>
+    <small>בלי ספאם, אף פעם. ניתן לבטל בכל עת.</small>
+  </div>
+</div></section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer"><div class="container">
+  <div class="footer__top">
+    <div class="footer__about">
+      <a href="#top" class="logo">Paw<b>za</b></a>
+      <p>מוצרי פרימיום לחיות מאושרות. אביזרים לכלבים ולחתולים, מיטות, כלי טיפוח וצעצועים — נשלחים עד הבית.</p>
+      <div class="footer__social"><a href="#" aria-label="פייסבוק">f</a><a href="#" aria-label="אינסטגרם">◎</a><a href="#" aria-label="יוטיוב">▶</a></div>
+      <div class="footer__pay"><span>VISA</span><span>MASTERCARD</span><span>AMEX</span><span>PAYPAL</span><span>BIT</span></div>
+    </div>
+    <div class="footer__col"><h4>חנות</h4><ul><li><a href="#shop">כל המוצרים</a></li><li><a href="#shop">הנמכרים ביותר</a></li><li><a href="#shop">מוצרים לכלבים</a></li><li><a href="#shop">מוצרים לחתולים</a></li></ul></div>
+    <div class="footer__col"><h4>החברה</h4><ul><li><a href="#about">אודות</a></li><li><a href="#contact">צור קשר</a></li><li><a href="#">שאלות נפוצות</a></li><li><a href="#">בלוג</a></li></ul></div>
+    <div class="footer__col"><h4>תמיכה</h4><ul><li><a href="#">מדיניות משלוח</a></li><li><a href="#">מדיניות החזרות</a></li><li><a href="#">מדיניות פרטיות</a></li><li><a href="#">תנאי שימוש</a></li></ul></div>
+  </div>
+  <div class="footer__bottom"><p>© <span id="yr">2026</span> Pawza. כל הזכויות שמורות. מוצרי פרימיום לחיות מחמד.</p><nav><a href="#">פרטיות</a><a href="#">תנאים</a><a href="#">החזרות</a><a href="#">משלוחים</a></nav></div>
+</div></footer>
+
+<!-- CART DRAWER -->
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="עגלת קניות">
+  <div class="drawer__head"><h2>העגלה שלך</h2><button class="icon-btn" id="closeCart" aria-label="סגור עגלה">✕</button></div>
+  <div class="drawer__ship"><p id="shipMsg">עוד <b>₪199.00</b> למשלוח חינם</p><div class="ship-bar"><span id="shipFill"></span></div></div>
+  <div class="drawer__body" id="cartBody"></div>
+  <div class="drawer__foot">
+    <div class="cart-total"><span>סכום ביניים</span><b id="subtotal">₪0.00</b></div>
+    <button class="btn btn--accent btn--block btn--lg" id="checkoutBtn">מעבר לתשלום מאובטח</button>
+    <p class="muted">🔒 תשלום מאובטח בהצפנת SSL 256-bit</p>
+  </div>
+</aside>
+
+<!-- QUICK VIEW -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="צפייה מהירה במוצר"><div class="modal__bd" id="modalBd"></div><div class="modal__dialog" id="modalContent"></div></div>
+
+<!-- MOBILE NAV -->
+<div class="mnav" id="mnav"><div class="mnav__bd" id="mnavBd"></div><div class="mnav__panel">
+  <div class="mnav__head"><a href="#top" class="logo">Paw<b>za</b></a><button class="icon-btn" id="closeMnav" aria-label="סגור תפריט">✕</button></div>
+  <a href="#top">בית</a><a href="#shop">חנות</a><a href="#shop">הנמכרים ביותר</a><a href="#about">אודות</a><a href="#contact">צור קשר</a>
+</div></div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"><div class="ic">✓</div><div><strong id="toastTitle">נוסף לעגלה</strong><small id="toastText"></small></div></div>
+
+<script>
+(function(){
+  "use strict";
+  var FREE=199, money=function(n){return "₪"+n.toFixed(2)};
+  var PRODUCTS={
+    p1:{t:"מיטת זיכרון אורתופדית לכלב",c:"מיטות ונוחות",p:239.90,o:329.90,e:"🛏️"},
+    p2:{t:"צעצוע פאזל אינטראקטיבי לחטיפים",c:"צעצועים",p:89.90,o:null,e:"🧩"},
+    p3:{t:"מברשת טיפוח מתנקה בעצמה",c:"טיפוח",p:74.90,o:99.90,e:"🪮"},
+    p4:{t:"סט קערות נירוסטה נגד שפיכה",c:"אביזרים",p:109.90,o:null,e:"🥣"},
+    p5:{t:"מיטת מערה נעימה לחתול",c:"מוצרים לחתולים",p:149.90,o:199.90,e:"🐈"},
+    p6:{t:"מארז עצמות חבל עמידות",c:"צעצועים",p:59.90,o:null,e:"🦴"},
+    p7:{t:"רתמת נוחות מתכווננת לכלב",c:"מוצרים לכלבים",p:129.90,o:169.90,e:"🐕"},
+    p8:{t:"מקל נוצות משחק לחתול",c:"מוצרים לחתולים",p:49.90,o:null,e:"🪶"},
+    p9:{t:"מיטת דונאט מרגיעה",c:"מיטות ונוחות",p:179.90,o:249.90,e:"🩷"},
+    p10:{t:"ערכת משחיזת ציפורניים מקצועית",c:"טיפוח",p:99.90,o:null,e:"✂️"},
+    p11:{t:"שמיכת נסיעות עמידה למים",c:"אביזרים",p:84.90,o:109.90,e:"🧣"},
+    p12:{t:"קולר בטיחות נטען LED",c:"מוצרים לכלבים",p:69.90,o:null,e:"💡"}
+  };
+  var $=function(id){return document.getElementById(id)};
+  var cart={};
+  try{cart=JSON.parse(localStorage.getItem("pawza_cart_he"))||{}}catch(e){cart={}}
+  function save(){try{localStorage.setItem("pawza_cart_he",JSON.stringify(cart))}catch(e){}}
+  var wish={};
+  try{wish=JSON.parse(localStorage.getItem("pawza_wish_he"))||{}}catch(e){wish={}}
+
+  function subtotal(){var s=0;for(var id in cart){s+=PRODUCTS[id].p*cart[id]}return s}
+  function count(){var n=0;for(var id in cart){n+=cart[id]}return n}
+  function render(){
+    var body=$("cartBody"),keys=Object.keys(cart);
+    if(!keys.length){body.innerHTML='<div class="cart-empty"><div class="big">🛒</div><p>העגלה שלך ריקה.</p><button class="btn btn--ghost btn--sm" id="emptyClose" style="margin-top:14px">התחל בקנייה</button></div>';var ec=$("emptyClose");if(ec)ec.onclick=closeCart;}
+    else{body.innerHTML=keys.map(function(id){var p=PRODUCTS[id],q=cart[id];return '<div class="cart-line"><div class="ph">'+p.e+'</div><div><h4>'+p.t+'</h4><span class="muted">'+p.c+'</span><div class="qty"><button data-dec="'+id+'" aria-label="הפחת">−</button><span>'+q+'</span><button data-inc="'+id+'" aria-label="הוסף">+</button></div></div><div><div class="cart-line__price">'+money(p.p*q)+'</div><button class="cart-line__rm" data-rm="'+id+'">הסר</button></div></div>';}).join("");}
+    var sub=subtotal();
+    $("subtotal").textContent=money(sub);
+    var c=count();$("cartBadge").textContent=c;$("cartBadge").setAttribute("data-count",c);
+    var remain=Math.max(0,FREE-sub),pct=Math.min(100,sub/FREE*100);
+    $("shipFill").style.width=pct+"%";
+    $("shipMsg").innerHTML=remain<=0?"✓ קיבלת <b>משלוח חינם!</b>":"עוד <b>"+money(remain)+"</b> למשלוח חינם";
+    save();
+  }
+  function add(id){cart[id]=(cart[id]||0)+1;render();openCart();showToast(PRODUCTS[id].t);}
+  function setQty(id,q){if(q<=0)delete cart[id];else cart[id]=q;render();}
+
+  function openCart(){$("drawer").classList.add("open");$("overlay").classList.add("open");document.body.style.overflow="hidden";}
+  function closeCart(){$("drawer").classList.remove("open");if(!$("modal").classList.contains("open"))$("overlay").classList.remove("open");document.body.style.overflow="";}
+
+  function openQuick(id){var p=PRODUCTS[id];
+    $("modalContent").innerHTML='<button class="modal__close" id="qvClose" aria-label="סגור">✕</button><div class="qv"><div class="qv__ph">'+p.e+'</div><div class="qv__body"><span class="card__cat">'+p.c+'</span><h2>'+p.t+'</h2><div class="stars"><span class="s" style="font-size:1.05rem">★★★★★</span><span class="count">ביקורות מאומתות</span></div><div class="card__price" style="margin:12px 0"><span class="price">'+money(p.p)+'</span>'+(p.o?'<span class="price--old">'+money(p.o)+'</span>':'')+'</div><p class="qv__desc">איכות פרימיום, מעוצב בקפידה לנוחות ולאושר של חיית המחמד. עמיד, קל לניקוי ומאושר וטרינרים.</p><button class="btn btn--accent btn--block btn--lg" data-add="'+id+'">הוסף לעגלה</button></div></div>';
+    $("modal").classList.add("open");$("overlay").classList.add("open");document.body.style.overflow="hidden";
+    var qc=$("qvClose");if(qc){qc.onclick=closeQuick;qc.focus();}
+  }
+  function closeQuick(){$("modal").classList.remove("open");if(!$("drawer").classList.contains("open")){$("overlay").classList.remove("open");document.body.style.overflow="";}}
+
+  var toastT;
+  function showToast(name){$("toastText").textContent=name;var t=$("toast");t.classList.add("show");clearTimeout(toastT);toastT=setTimeout(function(){t.classList.remove("show");},2600);}
+
+  function updateWishBadge(){var n=Object.keys(wish).length;$("wishBadge").textContent=n;$("wishBadge").setAttribute("data-count",n);}
+  function toggleWish(btn,id){if(wish[id]){delete wish[id];btn.classList.remove("active");}else{wish[id]=1;btn.classList.add("active");}try{localStorage.setItem("pawza_wish_he",JSON.stringify(wish))}catch(e){}updateWishBadge();}
+
+  document.addEventListener("click",function(e){
+    var t=e.target;
+    var add1=t.closest("[data-add]");if(add1){add(add1.getAttribute("data-add"));return;}
+    var q=t.closest("[data-quick]");if(q){openQuick(q.getAttribute("data-quick"));return;}
+    var w=t.closest("[data-id]");if(w&&w.classList.contains("card__wish")){toggleWish(w,w.getAttribute("data-id"));return;}
+    var inc=t.closest("[data-inc]");if(inc){var i=inc.getAttribute("data-inc");setQty(i,(cart[i]||0)+1);return;}
+    var dec=t.closest("[data-dec]");if(dec){var d=dec.getAttribute("data-dec");setQty(d,(cart[d]||0)-1);return;}
+    var rm=t.closest("[data-rm]");if(rm){setQty(rm.getAttribute("data-rm"),0);return;}
+    var faq=t.closest(".faq__q");if(faq){var f=faq.parentNode;var open=f.classList.contains("open");f.classList.toggle("open");var a=f.querySelector(".faq__a");a.style.maxHeight=open?"0":a.scrollHeight+"px";return;}
+  });
+
+  $("openCart").onclick=function(){render();openCart();};
+  $("closeCart").onclick=closeCart;
+  $("overlay").onclick=function(){closeCart();closeQuick();};
+  $("modalBd").onclick=closeQuick;
+  $("checkoutBtn").onclick=function(){alert("זו חנות הדגמה. כאן ייפתח התשלום המאובטח.");};
+  $("openMnav").onclick=function(){$("mnav").classList.add("open");document.body.style.overflow="hidden";};
+  $("closeMnav").onclick=function(){$("mnav").classList.remove("open");document.body.style.overflow="";};
+  $("mnavBd").onclick=function(){$("mnav").classList.remove("open");document.body.style.overflow="";};
+  Array.prototype.forEach.call(document.querySelectorAll(".mnav a"),function(a){a.onclick=function(){$("mnav").classList.remove("open");document.body.style.overflow="";};});
+  $("nlForm").onsubmit=function(e){e.preventDefault();this.innerHTML='<p style="color:#fff;font-weight:600;grid-column:1/-1">🎉 תודה שנרשמתם! מבצע קבלת הפנים של 10% בדרך אליכם.</p>';};
+  document.addEventListener("keydown",function(e){if(e.key==="Escape"){closeCart();closeQuick();$("mnav").classList.remove("open");document.body.style.overflow="";}});
+
+  var end=Date.now()+(8*3600+47)*1000;
+  function tick(){var d=Math.max(0,end-Date.now());var h=Math.floor(d/3600000),m=Math.floor(d%3600000/60000),s=Math.floor(d%60000/1000);var pad=function(n){return(n<10?"0":"")+n};$("cdH").textContent=pad(h);$("cdM").textContent=pad(m);$("cdS").textContent=pad(s);}
+  tick();setInterval(tick,1000);
+
+  Array.prototype.forEach.call(document.querySelectorAll(".card__wish"),function(b){if(wish[b.getAttribute("data-id")])b.classList.add("active");});
+  updateWishBadge();
+  $("yr").textContent=new Date().getFullYear();
+  render();
+})();
+</script>
+</body>
+</html>
